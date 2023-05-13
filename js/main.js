@@ -1,21 +1,25 @@
-let TrandingSlider = new Swiper('.tranding-slider', {
-    effect: 'coverflow',
-    grabCursor: true,
-    centeredSlides: true,
-    loop: true,
-    slidesPerView: 'auto',
-    coverflowEffect: {
-      rotate: 0,
-      stretch: 0,
-      depth: 100,
-      modifier: 2.5,
-    },
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
-    },
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    }
-  });
+let dnet = document.getElementById("myImage1");
+let capstone = document.getElementById("myImage2");
+let ccc = document.getElementById("myImage3");
+let oldport = document.getElementById("myImage4");
+let honda = document.getElementById("myImage5");
+
+dnet.addEventListener("click", function() {
+  window.location.href = "https://gohn01.github.io/mini-project-1.dnet.github.io/";
+});
+
+capstone.addEventListener("click", function() {
+    window.location.href = "https://github.com/gohn01/capstoneproject.git";
+});
+
+ccc.addEventListener("click", function() {
+    window.location.href = "https://gohn01.github.io/cafechillncoffee.github.io/";
+});
+
+oldport.addEventListener("click", function() {
+    window.location.href = "https://ajperez.netlify.app/";
+});
+
+honda.addEventListener("click", function() {
+    window.location.href = "https://gohn01.github.io/miniproject2htmlcss.github.io/";
+});
