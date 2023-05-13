@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/d6d9d9ca7e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="images/AlexisWeb.png">
+    <title>Alexis Web</title>
+</head>
+<body>
+    <section>
+        <nav>
+            <div class="logo">
+                <a href="index.html"><img src="images/AlexisWeb.png" alt="logo"></a>
+            </div>
+            <div>
+                <ul>
+                    <li><a href="#"><i class="fa-regular fa-envelope"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-github"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+                </ul>
+            </div>
+        </nav>
+        
+    </section>
+
+    <script>
+        function changeImage(imagePath) {
+            let img = document.getElementById("myImage");
+            img.style.width = "200px";
+            img.src = imagePath;
+            
+        }
+
+        function restoreImage(imagePath) {
+            let img = document.getElementById("myImage");
+            img.style.width = "200px";
+            img.src = imagePath;
+        }
+
+    </script>
+</body>
+</html>
