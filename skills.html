@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/d6d9d9ca7e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/skills.css">
+    <link rel="icon" href="images/AlexisWeb.png">
+    <!-- ? -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <title>Alexis Web</title>
+
+</head>
+<body>
+    <section>
+        <nav>
+            <div class="logo">
+                <a href="index.html"><img src="images/AlexisWeb.png" alt="logo"></a>
+            </div>
+            <div>
+                <ul>
+                    <li><a href="#"><i class="fa-regular fa-envelope"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-github"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="skills">
+            <div class="wrapper-left">
+                <p>EXPLORER</p>
+                <div id="front-end">
+                    <button id="openFront" class="accordion" ><h4>
+                        <span class="arrow"><i id="arrowRightF" class="fa-solid fa-arrow-right"></i></span>
+                        <span class="folder"><i id="openFolderF" class="fa-solid fa-folder"></i></span> 
+                        Front End</h4>
+                    </button>
+                    <div id="drop-downF" class="panel">
+                        <ul class="dropdown-menu">
+                            <li id="css"><p><span class="css"><i class="fa-brands fa-css3-alt"></i></span> css</p></li>
+                            <li id="html"><p><span class="html"><i class="fa-brands fa-html5"></i></span> html</p></li>
+                            <li id="js"><p><span class="js"><i class="fa-brands fa-js"></i></span> js</p></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div id="back-end">
+                    <button id="openBack" class="accordion">
+                        <h4>                      
+                            <span class="arrow"><i id="arrowRightB" class="fa-solid fa-arrow-right"></i></span>
+                            <span class="folder"><i id="openFolderB" class="fa-solid fa-folder"></i></span> 
+                             Back End
+                        </h4>
+                    </button>
+                    <div class="panel">
+                        <h4><span class="php"><i class="fa-brands fa-php"></i></span> php</h4>
+                    </div>
+                </div>
+
+                <div id="database">
+                    <button id="openData" class="accordion" >
+                        <h4>                      
+                            <span class="arrow"><i id="arrowRightD" class="fa-solid fa-arrow-right"></i></span>
+                            <span class="folder"><i id="openFolderD" class="fa-solid fa-folder"></i></span> 
+                             Database
+                        </h4>
+                    </button>
+                    <div class="panel">
+                        <h4>mysql</h4>
+                    </div>
+                </div>
+
+                <div id="others">
+                    <button id="openOthers" class="accordion">
+                        <h4>                      
+                            <span class="arrow"><i id="arrowRightO" class="fa-solid fa-arrow-right"></i></span>
+                            <span class="folder"><i id="openFolderO" class="fa-solid fa-folder"></i></span> 
+                             Others
+                        </h4>
+                    </button>
+                    <div class="panel">
+                        <h4><span class="github"><i class="fa-brands fa-github"></i></span> github</h4>
+                        <h4>photoshop</h4>
+                    </div>
+                </div>
+
+            </div>
+            <div class="wrapper-right">
+                <p id="title" style="display: none;"></p>
+                <div class="container">
+                    <div class="item css" id="img-css" style="display: none;">
+                       <img src="images/Untitled.png" alt="" width="550px" height="450px">
+                    </div>
+                    <div class="item html" id="img-html" style="display: none;">
+                       <img src="images/html.png" alt="" width="550px" height="450px">
+                    </div>
+                    <div class="item js" id="img-js" style="display: none;">
+                       <img src="images/js.png" alt="" width="550px" height="450px">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <script>
+        let cssEl = document.getElementById('css');
+        let imgCss = document.getElementById('img-css');
+
+        let htmlEl = document.getElementById('html');
+        let imgHtml = document.getElementById('img-html');
+
+        let jsEl = document.getElementById('js');
+        let imgJs = document.getElementById('img-js');
+
+
+
+        cssEl.addEventListener('click',()=>{
+            document.getElementById('title').innerHTML ="CSS";
+            if (title.style.display === 'none') {
+                title.style.display = 'block';  
+            } else {
+                title.style.display = 'none';
+            }
+            title.style.textAlign = 'center';
+            title.style.padding = '10px';
+            title.style.backgroundColor = '#1a1919';
+            title.style.width = '150px';
+            
+            if (imgCss.style.display === 'none') {
+                imgCss.style.display = 'block';
+            } else {
+                imgCss.style.display = 'none';
+            }
+        }) 
+
+        
+        htmlEl.addEventListener('click',()=>{
+            document.getElementById('title').innerHTML ="HTML";
+            if (title.style.display === 'none') {
+                title.style.display = 'block';  
+            } else {
+                title.style.display = 'none';
+            }
+            title.style.textAlign = 'center';
+            title.style.padding = '10px';
+            title.style.backgroundColor = '#1a1919';
+            title.style.width = '150px';
+            
+            if (imgHtml.style.display === 'none') {
+                imgHtml.style.display = 'block';
+            } else {
+                imgHtml.style.display = 'none';
+            }
+
+
+        })
+
+        jsEl.addEventListener('click',()=>{
+            document.getElementById('title').innerHTML = "JavaScript";
+            if (title.style.display === 'none') {
+                title.style.display = 'block';  
+            } else {
+                title.style.display = 'none';
+            }
+            title.style.textAlign = 'center';
+            title.style.padding = '10px';
+            title.style.backgroundColor = '#1a1919';
+            title.style.width = '150px';
+            
+            if (imgJs.style.display === 'none') {
+                imgJs.style.display = 'block';
+            } else {
+                imgJs.style.display = 'none';
+            }
+
+        })
+    
+    </script>
+
+    
+
+    <script>
+        let acc = document.getElementsByClassName("accordion");
+        let i;
+        
+        for (i = 0; i < acc.length; i++) {
+          acc[i].addEventListener("click", function() {
+            let panel = this.nextElementSibling;
+            if (panel.style.maxHeight) {
+              panel.style.maxHeight = null;
+            } else {
+              panel.style.maxHeight = panel.scrollHeight + "px";
+            } 
+          });
+        }
+    </script>
+    <script src="js/skills.js"></script>
+    <script src="js/project.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

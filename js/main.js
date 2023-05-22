@@ -23,3 +23,4 @@ oldport.addEventListener("click", function() {
 honda.addEventListener("click", function() {
     window.location.href = "https://gohn01.github.io/miniproject2htmlcss.github.io/";
 });
+
